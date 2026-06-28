@@ -21,7 +21,7 @@ My goal is to design **fault-tolerant distributed systems**, automate deployment
 
 ## 🌐 Live Portfolio
 
-👉 **[View Live Portfolio](#)**  
+👉 **[[View Live Portfolio](https://tarfi786.github.io/tarfi-portfolio/)](#)**  
 *(Replace with GitHub Pages / Vercel link)*
 
 ---
@@ -79,8 +79,8 @@ Automated AWS infrastructure provisioning using reusable modules.
 ## 📬 Contact Me
 
 - 📧 Email: **tarfi.ansari786@gmail.com**
-- 💼 LinkedIn: [LinkedIn Profile](#)
-- 🐙 GitHub: [GitHub Profile](#)
+- 💼 LinkedIn: [LinkedIn Profile](https://www.linkedin.com/in/tarfi-ansari/)
+- 🐙 GitHub: [GitHub Profile](https://github.com/tarfi786)
 
 ---
 
