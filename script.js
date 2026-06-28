@@ -1,51 +1,25 @@
-const throttle = (fn, delay = 50) => {
-  let last = 0;
-  return () => {
-    const now = Date.now();
-    if (now - last >= delay) {
-      last = now;
-      fn();
-    }
-  };
-};
+// Smooth scroll animation + reveal
+const elements = document.querySelectorAll('.section, .card');
 
-const progress = document.getElementById("scroll-progress");
-const header = document.querySelector(".header");
-const reveals = document.querySelectorAll(".reveal");
-const sections = document.querySelectorAll("section");
-const navLinks = document.querySelectorAll(".nav-link");
-
-const updateUI = () => {
-  const scrollTop = window.scrollY;
-  const height =
-    document.documentElement.scrollHeight -
-    document.documentElement.clientHeight;
-
-  progress.style.width = `${(scrollTop / height) * 100}%`;
-  header.classList.toggle("scrolled", scrollTop > 30);
-
-  reveals.forEach(section => {
-    if (section.getBoundingClientRect().top < window.innerHeight - 120) {
-      section.classList.add("active");
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('show');
     }
   });
+}, { threshold: 0.1 });
 
-  let current = "";
-  sections.forEach(section => {
-    if (scrollTop >= section.offsetTop - 150) {
-      current = section.id;
-    }
+elements.forEach(el => {
+  el.classList.add('fade-in');
+  observer.observe(el);
+});
+
+// Smooth scroll for buttons
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener("click", function (e) {
+    e.preventDefault();
+    document.querySelector(this.getAttribute("href")).scrollIntoView({
+      behavior: "smooth"
+    });
   });
-
-  navLinks.forEach(link => {
-    link.classList.toggle(
-      "active",
-      link.getAttribute("href") === `#${current}`
-    );
-  });
-};
-
-window.addEventListener("scroll", throttle(updateUI));
-window.addEventListener("load", updateUI);
-
-console.log("Portfolio ready 🚀");
+});
