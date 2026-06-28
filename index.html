@@ -3,133 +3,108 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tarfi Ansari | Data Analyst</title>
+  <title>Tarfi Ansari | Cloud & DevOps Engineer</title>
 
   <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
 
-  <!-- Scroll Progress -->
-  <div id="scroll-progress"></div>
+  <!-- HERO SECTION -->
+  <header class="hero">
 
-  <!-- Header -->
-  <header class="header">
-    <div class="container">
-      <h1 class="logo">Tarfi<span>.</span></h1>
-      <nav>
-        <a href="#about" class="nav-link">About</a>
-        <a href="#education" class="nav-link">Education</a>
-        <a href="#skills" class="nav-link">Skills</a>
-        <a href="#work" class="nav-link">Work</a>
-        <a href="#contact" class="nav-link">Contact</a>
-      </nav>
+    <div class="profile-wrapper">
+      <img src="profile.jpg" alt="Tarfi Ansari" class="profile-img">
     </div>
+
+    <p class="role">Cloud & DevOps Engineer</p>
+
+    <h1>
+      Building scalable cloud infrastructure<br>
+      with automation & reliability
+    </h1>
+
+    <p class="description">
+      Passionate about AWS, Docker, Kubernetes, Terraform, and CI/CD pipelines.
+      Focused on building production-ready cloud systems and automation workflows.
+    </p>
+
+    <a href="https://github.com/tarfi786" class="cta-btn">View Projects</a>
+
   </header>
 
-  <!-- Hero -->
-  <section class="hero">
-    <div class="container">
-      <div class="profile-picture">
-        <img src="profile.jpg" alt="Tarfi Ansari" class="profile-img">
+  <!-- ABOUT -->
+  <section class="section">
+    <h2>About Me</h2>
+    <p>
+      I am an aspiring Cloud & DevOps Engineer specializing in designing scalable,
+      secure, and automated cloud infrastructure using AWS, Docker, Kubernetes,
+      and Terraform. I enjoy building CI/CD pipelines and automating deployments
+      for real-world production systems.
+    </p>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section dark">
+    <h2>Technical Skills</h2>
+
+    <div class="skills">
+      <span>AWS</span>
+      <span>Docker</span>
+      <span>Kubernetes</span>
+      <span>Terraform</span>
+      <span>CI/CD</span>
+      <span>Git & GitHub</span>
+      <span>Linux</span>
+      <span>Python</span>
+      <span>Bash</span>
+      <span>Monitoring</span>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section">
+    <h2>Featured Projects</h2>
+
+    <div class="cards">
+
+      <div class="card">
+        <h3>CI/CD Pipeline on AWS</h3>
+        <p>Automated deployment pipeline using GitHub Actions, Docker, and AWS EC2.</p>
       </div>
-      <p class="intro">Data Analyst</p>
-      <h2>Uncovering insights from data<br>for informed decisions</h2>
-      <p class="subtext">
-        Focused on data visualization, statistical analysis, and actionable insights.
-      </p>
-      <a href="#work" class="btn">View Work</a>
-    </div>
-  </section>
 
-  <!-- About -->
-  <section id="about" class="section reveal">
-    <div class="container narrow">
-      <h3>About</h3>
-      <p>
-        Hi, I’m Tarfi Ansari, a dedicated Data Analyst with a passion for transforming raw data into meaningful insights. I specialize in data cleaning, visualization, and statistical analysis to help businesses make data-driven decisions. Skilled in Python, SQL, Excel, and visualization tools like Tableau and Power BI, I turn complex datasets into actionable strategies. I’m always eager to learn new tools and techniques to deliver impactful solutions.
-      </p>
-    </div>
-  </section>
-
-  <!-- Education -->
-  <section id="education" class="section dark reveal">
-    <div class="container narrow">
-      <h3>Education</h3>
-      <div class="education-grid">
-        <div class="education-card">
-          <h4>Bachelor in Computer Science Engineering</h4>
-          <p>KCCITM,AKTU,2023-2027</p>
-          <p>Specialisation in AI/ML.  Focused  Statistical Modeling, Data Analysis</p>
-        </div>
-        <div class="education-card">
-          <h4>High School </h4>
-          <p>CBSE,x  2020 - 2021</p>
-          <p>CBSE,XII  2022 - 2023</p>
-          <p>Focused in Physics, Chemistry, and Mathematics.</p>
-        </div>
+      <div class="card">
+        <h3>Docker & Kubernetes Deployment</h3>
+        <p>Containerized microservices deployed on Kubernetes cluster.</p>
       </div>
-    </div>
-  </section>
 
-  <!-- Skills -->
-  <section id="skills" class="section reveal">
-    <div class="container">
-      <h3>Skills</h3>
-      <div class="skills-grid">
-        <span>Python</span>
-        <span>SQL</span>
-        <span>Excel</span>
-        <span>Tableau/Power BI</span>
-        <span>SaaS Development</span>
-        <span>GEN AI</span>
+      <div class="card">
+        <h3>Infrastructure as Code (Terraform)</h3>
+        <p>Automated AWS infrastructure provisioning using Terraform modules.</p>
       </div>
+
     </div>
   </section>
 
-  <!-- Work -->
-  <section id="work" class="section dark reveal">
-    <div class="container">
-      <h3>Selected Work</h3>
-      <div class="work-grid">
-        <div class="work-card">
-          <h4>Data Visualization Dashboard</h4>
-          <p>Interactive dashboards for real-time data insights.</p>
-        </div>
-        <div class="work-card">
-          <h4>Sales Analysis Report</h4>
-          <p>Comprehensive reports on sales trends and performance metrics.</p>
-        </div>
-        <div class="work-card">
-          <h4>Predictive Modeling</h4>
-          <p>Machine learning models for forecasting and trend analysis.</p>
-        </div>
-      </div>
-    </div>
-  </section>
+  <!-- CONTACT -->
+  <section class="section dark">
+    <h2>Contact</h2>
 
-  <!-- Contact -->
-  <section id="contact" class="section reveal">
-    <div class="container narrow">
-      <h3>Contact</h3>
-      <p><i class="fas fa-envelope"></i> Email: <strong>tarfi.ansari786@gmail.com</strong></p>
-      <p><i class="fas fa-phone"></i> Phone: <strong>91+7838877633</strong></p>
-      <p><i class="fas fa-link"></i> Linktree: <a href="https://tarfi786.github.io/tarfi-linktree/" target="_blank">linktr.ee/your-linktree</a></p>
-      <p><i class="fas fa-file-pdf"></i> Resume: <a href="tarfi.resume.pdf" target="_blank">Download Resume</a></p>
-    </div>
+    <p><i class="fas fa-envelope"></i> tarfi.systems@gmail.com</p>
+    <p><i class="fas fa-phone"></i> +91 7838877633</p>
+
+    <a href="tarfi_resume.pdf" class="cta-btn">Download Resume</a>
   </section>
 
   <footer>
-    © 2026 Tarfi Ansari
+    © 2026 Tarfi Ansari | Cloud & DevOps Engineer
   </footer>
 
-  <script src="script.js"></script>
 </body>
 </html>
 
